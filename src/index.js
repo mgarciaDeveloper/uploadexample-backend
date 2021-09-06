@@ -21,7 +21,7 @@ mongoose.connect(
   }
 );
 
-app.use(cors()); //permite o trabalho com portas , uma vez que trabalho com back e front
+app.use(cors()); //permite o trabalho com portas , uma vez que trabalho com back e front. Em branco todo mundo acessa
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
